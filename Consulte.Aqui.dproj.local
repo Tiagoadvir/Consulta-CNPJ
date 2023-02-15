@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/01/06 09:19:06.000.921,=C:\Users\Tiago Robson\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2023/01/30 18:02:36.000.448,=C:\Users\Tiago Robson\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2023/02/10 10:21:04.000.347,=C:\Users\Tiago Robson\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2023/02/10 10:45:11.000.653,D:\PROJETOS DELPHI\CONSULTA CNPJ\uConsultaCNPJ.fmx=C:\Users\Tiago Robson\Documents\Embarcadero\Studio\Projects\Unit2.fmx</Transaction>
+    <Transaction>2023/02/10 10:45:11.000.653,D:\PROJETOS DELPHI\CONSULTA CNPJ\uConsultaCNPJ.pas=C:\Users\Tiago Robson\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2023/02/10 10:45:46.000.661,D:\PROJETOS DELPHI\CONSULTA CNPJ\Consulte.Aqui.dproj=C:\Users\Tiago Robson\Documents\Embarcadero\Studio\Projects\Project4.dproj</Transaction>
+    <Transaction>2023/02/14 11:03:02.000.627,=D:\PROJETOS DELPHI\CONSULTA CNPJ\unit\uFunctions.pas</Transaction>
+    <Transaction>2023/02/15 10:39:29.601,=D:\PROJETOS DELPHI\CONSULTA CNPJ\unit\uFormat.pas</Transaction>
+    <Transaction>2023/02/15 10:48:47.150,=D:\PROJETOS DELPHI\CONSULTA CNPJ\unit\uFancyDialog.pas</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+</BorlandProject>

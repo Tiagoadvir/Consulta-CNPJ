@@ -1,0 +1,361 @@
+object FrmPrincipal: TFrmPrincipal
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu, biMinimize]
+  Caption = 'Form2'
+  ClientHeight = 480
+  ClientWidth = 386
+  Position = MainFormCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 0
+  object edtCNPJ: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 0
+    Position.X = 56.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 217.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    OnTyping = edtCNPJTyping
+  end
+  object lblTItulo: TLabel
+    Align = Top
+    StyledSettings = [Family, FontColor]
+    Size.Width = 386.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 18.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.HorzAlign = Center
+    Text = 'Consulta C.N.P.J'
+    TabOrder = 1
+  end
+  object lblCNPJ: TLabel
+    Position.X = 8.000000000000000000
+    Position.Y = 58.000000000000000000
+    Size.Width = 49.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'C.N.P.J'
+    TabOrder = 2
+  end
+  object btnCOnultar: TButton
+    Position.X = 296.000000000000000000
+    Position.Y = 56.000000000000000000
+    TabOrder = 3
+    Text = 'Consultar'
+    OnClick = btnCOnultarClick
+  end
+  object lblnome: TLabel
+    Position.X = 16.000000000000000000
+    Position.Y = 123.000000000000000000
+    Size.Width = 33.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Nome'
+    TabOrder = 39
+  end
+  object lblporte: TLabel
+    Position.X = 200.000000000000000000
+    Position.Y = 144.000000000000000000
+    Size.Width = 33.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Porte'
+    TabOrder = 37
+  end
+  object lblSituacao: TLabel
+    Position.X = 16.000000000000000000
+    Position.Y = 94.000000000000000000
+    Size.Width = 49.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Situa'#231#227'o'
+    TabOrder = 35
+  end
+  object lbllogradouro: TLabel
+    Position.X = 16.000000000000000000
+    Position.Y = 176.000000000000000000
+    Size.Width = 65.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Logradouro'
+    TabOrder = 33
+  end
+  object lblnumero: TLabel
+    Position.X = 272.000000000000000000
+    Position.Y = 176.000000000000000000
+    Size.Width = 49.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Numero'
+    TabOrder = 31
+  end
+  object lbltipo: TLabel
+    Position.X = 16.000000000000000000
+    Position.Y = 146.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Tipo'
+    TabOrder = 29
+  end
+  object lblmunicipio: TLabel
+    Position.X = 16.000000000000000000
+    Position.Y = 224.000000000000000000
+    Size.Width = 57.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Municipio'
+    TabOrder = 27
+  end
+  object lblbairro: TLabel
+    Position.X = 16.000000000000000000
+    Position.Y = 200.000000000000000000
+    Size.Width = 33.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Bairro'
+    TabOrder = 25
+  end
+  object lblUf: TLabel
+    Position.X = 288.000000000000000000
+    Position.Y = 222.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'UF'
+    TabOrder = 23
+  end
+  object lblCEP: TLabel
+    Position.X = 16.000000000000000000
+    Position.Y = 248.000000000000000000
+    Size.Width = 33.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'CEP'
+    TabOrder = 21
+  end
+  object lblfantasia: TLabel
+    Position.X = 16.000000000000000000
+    Position.Y = 273.000000000000000000
+    Size.Width = 49.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Fantasia'
+    TabOrder = 19
+  end
+  object lbltelefone: TLabel
+    Position.X = 16.000000000000000000
+    Position.Y = 302.000000000000000000
+    Size.Width = 57.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Telefone'
+    TabOrder = 17
+  end
+  object lblMotivodaSituacao: TLabel
+    Position.X = 160.000000000000000000
+    Position.Y = 93.000000000000000000
+    Size.Width = 105.000000000000000000
+    Size.Height = 20.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.VertAlign = Leading
+    Text = 'Motivo da Situa'#231#227'o'
+    TabOrder = 15
+  end
+  object lblnaturezjuridica: TLabel
+    Position.X = 16.000000000000000000
+    Position.Y = 329.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Natureza Juridica'
+    TabOrder = 13
+  end
+  object lblAbertura: TLabel
+    Position.X = 16.000000000000000000
+    Position.Y = 363.000000000000000000
+    Size.Width = 49.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Abertura'
+    TabOrder = 11
+  end
+  object lblDataSituacao: TLabel
+    Position.X = 192.000000000000000000
+    Position.Y = 363.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Data da Situa'#231#227'o'
+    TabOrder = 9
+  end
+  object lblUltimaAtualizacao: TLabel
+    Position.X = 16.000000000000000000
+    Position.Y = 400.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Utima Atualiza'#231#227'o'
+    TabOrder = 7
+  end
+  object lblSituacao1: TLabel
+    Position.X = 73.000000000000000000
+    Position.Y = 95.000000000000000000
+    Size.Width = 49.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 34
+  end
+  object lblmotivodasituacao1: TLabel
+    Position.X = 272.000000000000000000
+    Position.Y = 93.000000000000000000
+    Size.Width = 105.000000000000000000
+    Size.Height = 36.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.VertAlign = Leading
+    TabOrder = 14
+  end
+  object lblnome1: TLabel
+    Position.X = 54.000000000000000000
+    Position.Y = 124.000000000000000000
+    Size.Width = 339.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 38
+  end
+  object lbltipo1: TLabel
+    Position.X = 48.000000000000000000
+    Position.Y = 146.000000000000000000
+    Size.Width = 145.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 28
+  end
+  object lblporte1: TLabel
+    Position.X = 240.000000000000000000
+    Position.Y = 144.000000000000000000
+    Size.Width = 153.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 36
+  end
+  object lbllogradouro1: TLabel
+    Position.X = 80.000000000000000000
+    Position.Y = 176.000000000000000000
+    Size.Width = 185.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 32
+  end
+  object lblnumero1: TLabel
+    Position.X = 328.000000000000000000
+    Position.Y = 176.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 30
+  end
+  object lblbairro1: TLabel
+    Position.X = 56.000000000000000000
+    Position.Y = 200.000000000000000000
+    Size.Width = 337.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 24
+  end
+  object lblmunicipio1: TLabel
+    Position.X = 80.000000000000000000
+    Position.Y = 224.000000000000000000
+    Size.Width = 201.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 26
+  end
+  object lblUf1: TLabel
+    Position.X = 312.000000000000000000
+    Position.Y = 222.000000000000000000
+    Size.Width = 89.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 22
+  end
+  object lblCEP1: TLabel
+    Position.X = 56.000000000000000000
+    Position.Y = 248.000000000000000000
+    Size.Width = 209.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 20
+  end
+  object lblfantasia1: TLabel
+    Position.X = 66.000000000000000000
+    Position.Y = 273.000000000000000000
+    Size.Width = 335.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 18
+  end
+  object lbltelefone1: TLabel
+    Position.X = 80.000000000000000000
+    Position.Y = 302.000000000000000000
+    Size.Width = 297.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 16
+  end
+  object lblnaturezjuridica1: TLabel
+    Position.X = 120.000000000000000000
+    Position.Y = 329.000000000000000000
+    Size.Width = 273.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 12
+  end
+  object lblAbertura1: TLabel
+    Position.X = 72.000000000000000000
+    Position.Y = 363.000000000000000000
+    Size.Width = 105.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 10
+  end
+  object lblDataSituacao1: TLabel
+    Position.X = 304.000000000000000000
+    Position.Y = 363.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 8
+  end
+  object lblUltimaAtualizacao1: TLabel
+    Position.X = 121.000000000000000000
+    Position.Y = 401.000000000000000000
+    Size.Width = 192.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+  end
+  object lblAtividadePrincipal: TLabel
+    Position.X = 16.000000000000000000
+    Position.Y = 432.000000000000000000
+    Size.Width = 113.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Atividade Principal'
+    TabOrder = 6
+  end
+  object lblAtividadePrincipal1: TLabel
+    Position.X = 136.000000000000000000
+    Position.Y = 432.000000000000000000
+    Size.Width = 257.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+  end
+end
